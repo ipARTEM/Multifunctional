@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multifunctional", "Multifun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сalculator2", "Сalculator2\Сalculator2.csproj", "{2EAC1BED-EBE2-4664-ACC0-652AFE98C9B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сalculator3", "Сalculator3\Сalculator3.csproj", "{120458D1-642F-4833-9BFB-E79AD184F206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2EAC1BED-EBE2-4664-ACC0-652AFE98C9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EAC1BED-EBE2-4664-ACC0-652AFE98C9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EAC1BED-EBE2-4664-ACC0-652AFE98C9B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120458D1-642F-4833-9BFB-E79AD184F206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120458D1-642F-4833-9BFB-E79AD184F206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120458D1-642F-4833-9BFB-E79AD184F206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120458D1-642F-4833-9BFB-E79AD184F206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
