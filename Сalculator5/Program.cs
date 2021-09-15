@@ -14,8 +14,8 @@ namespace Сalculator5
         {
             Features f = new Features();
 
-          
-            if(!File.Exists("appsettings.json"))
+
+            if (!File.Exists("appsettings.json"))
             {
                 using (FileStream fs = new FileStream("appsettings.json", FileMode.OpenOrCreate))
                 {
@@ -25,26 +25,31 @@ namespace Сalculator5
                     await JsonSerializer.SerializeAsync<Features>(fs, f);
                     Console.WriteLine("Создан файл appsettings.json");
                 }
+                
+
+
+
             }
-
-
-
-            //// чтение данных
-            using (FileStream fs = new FileStream("appsettings.json", FileMode.OpenOrCreate))
-            {
-                try
+            
+                //// чтение данных
+                using (FileStream fs = new FileStream("appsettings.json", FileMode.OpenOrCreate))
                 {
+                    try
+                    {
 
-                    Features fRead = await JsonSerializer.DeserializeAsync<Features>(fs);
-                    Console.WriteLine("  Последняя запись:");
-                    Console.WriteLine($"  {fRead.LeftArg}{fRead.Action}{fRead.RightArg} = {fRead.Output}");
+                        Features fRead = await JsonSerializer.DeserializeAsync<Features>(fs);
+                        Console.WriteLine("  Последняя запись:");
+                        Console.WriteLine($"  {fRead.LeftArg}{fRead.Action}{fRead.RightArg} = {fRead.Output}");
+                    }
+                    catch (Exception)
+                    {
+                        await JsonSerializer.SerializeAsync<Features>(fs, f);
+
+                    }
                 }
-                catch (Exception)
-                {
-                    await JsonSerializer.SerializeAsync<Features>(fs, f);
-                    throw;
-                }
-            }
+
+
+            
 
 
 
@@ -113,21 +118,23 @@ namespace Сalculator5
 
                 } while (true);
 
+
                 do
                 {
+
                     try
                     {
                         if (action == 5)
                         {
                             Console.WriteLine("Введите показатель степени: ");
-                            f.RightArg = Convert.ToInt32(Console.ReadLine());
+                            f.RightArg = Convert.ToDouble(Console.ReadLine());
                             break;
 
                         }
                         else if (action == 6)
                         {
                             Console.WriteLine("Введите показатель корня: ");
-                            f.LeftArg = Convert.ToInt32(Console.ReadLine());
+                            f.LeftArg = Convert.ToDouble(Console.ReadLine());
                             break;
 
                         }
@@ -135,7 +142,7 @@ namespace Сalculator5
                         else
                         {
                             Console.WriteLine("Введите второе число: ");
-                            f.RightArg = Convert.ToInt32(Console.ReadLine());
+                            f.RightArg = Convert.ToDouble(Console.ReadLine());
                             break;
                         }
                     }
@@ -147,6 +154,8 @@ namespace Сalculator5
 
 
                 } while (true);
+
+
 
                 switch (action)
                 {
@@ -175,7 +184,7 @@ namespace Сalculator5
                         f.Action = "√";
                         break;
                 }
-                Console.WriteLine("\n"+" "+ f.LeftArg + f.Action + f.RightArg + " = " + f.Output);
+                Console.WriteLine("\n" + " " + f.LeftArg + f.Action + f.RightArg + " = " + f.Output);
                 Console.WriteLine();
 
 
@@ -220,8 +229,10 @@ namespace Сalculator5
                 await JsonSerializer.SerializeAsync<Features>(fs, f);
                 Console.WriteLine("Данные сохранены в файл");
             }
-        }
 
+
+
+        }                                                       
 
     }
 }

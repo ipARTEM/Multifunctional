@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Сalculator3", "Сalculator
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Сalculator4", "Сalculator4\Сalculator4.csproj", "{82FC0246-3EED-4953-88ED-EF410553B964}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сalculator5", "Сalculator5\Сalculator5.csproj", "{62CA9595-217D-42F0-8BFE-58FED52909A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Сalculator5", "Сalculator5\Сalculator5.csproj", "{62CA9595-217D-42F0-8BFE-58FED52909A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сalculator6", "Сalculator6\Сalculator6.csproj", "{06948810-F17B-4E61-B615-0613BEFD84A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{62CA9595-217D-42F0-8BFE-58FED52909A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62CA9595-217D-42F0-8BFE-58FED52909A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62CA9595-217D-42F0-8BFE-58FED52909A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06948810-F17B-4E61-B615-0613BEFD84A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06948810-F17B-4E61-B615-0613BEFD84A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06948810-F17B-4E61-B615-0613BEFD84A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06948810-F17B-4E61-B615-0613BEFD84A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
